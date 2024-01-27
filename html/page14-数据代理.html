@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+    </div>
+    <script>
+        let phone = {}
+        Object.defineProperty(phone, 'color', {
+            //value: 'blue',
+            //writable: true,
+            get: function(){
+                console.log('getter方法执行');
+            },
+            set: function(){
+                console.log('setter方法执行了');
+            }
+        })
+    </script>
+</body>
+</html>
